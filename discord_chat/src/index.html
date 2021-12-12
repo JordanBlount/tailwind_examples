@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamly Chat</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script defer src="scripts.js"></script>
+</head>
+
+<body class="bg-gray-600">
+    <main class="flex flex-col h-screen">
+        <nav class="flex items-center py-2 px-4 h-14 bg-gray-800 shrink-0 justify-between border-b border-black">
+            <div class="left_side flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+
+                <div class="ml-5 flex">
+                    <span class="text-gray-400 text-lg">#</span>
+                    <h1 class="ml-2 text-gray-100 font-bold">general</h1>
+                </div>
+            </div>
+            <div class="right_side flex items-center space-x-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-300" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                        d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                </svg>
+            </div>
+        </nav>
+        <div class="bg-gray-700 grow flex flex-col-reverse scrollbar-hide overflow-y-scroll">
+            <!-- Message div -->
+            <div class="message px-2 py-1 my-1 flex space-x-2 hover:bg-gray-600">
+                <img src="assets/avatar.png" class="h-11 w-11 object-cover bg-no-repeat rounded-full shrink-0">
+                <div>
+                    <div>
+                        <span class="text-white font-bold">toryjohnson</span>
+                        <span class="text-gray-400 ml-1 text-xs">Yesterday at 10:30PM</span>
+                    </div>
+                    <div class="-mt-0.5">
+                        <p class="text-gray-300 font-light break-words text-left">Hey y'all. What is going on today?</p>
+                    </div>
+                    <div class="reactions mt-2 flex space-x-2">
+                        <button class="bg-gray-800 rounded-md py-0.5 px-2">
+                            🤣
+                            <span class="text-gray-400 text-sm ml-0.5 font-medium">3</span>
+                        </button>
+                        <button class="bg-gray-800 rounded-md py-0.5 px-2">
+                            👋🏾
+                            <span class="text-gray-400 text-sm ml-0.5 font-medium">7</span>
+                        </button>
+                        <button class="bg-gray-800 rounded-md py-0.5 px-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px] text-gray-400" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="message px-2 py-2 my-1 flex space-x-2 hover:bg-gray-600">
+                <img src="assets/avatar.png" class="h-11 w-11 object-cover bg-no-repeat rounded-full shrink-0">
+                <div>
+                    <div>
+                        <span class="text-blue-400 font-bold">toryjohnson</span>
+                        <span class="text-gray-400 ml-1 text-xs">Today at 12:30PM</span>
+                    </div>
+                    <div class="-mt-0.5">
+                        <p class="text-gray-300 font-light break-words text-left ">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Dolores, sint? Quo sapiente repudiandae accusamus et sit in,
+                            consequuntur laudantium vitae?</p>
+                    </div>
+                    <div class="reactions mt-2 flex space-x-2">
+                        <button class="bg-gray-800 rounded-md py-1 px-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px] text-gray-400" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="message px-2 py-2 my-1 flex space-x-2 hover:bg-gray-600">
+                <img src="assets/avatar.png" class="h-11 w-11 object-cover bg-no-repeat rounded-full shrink-0">
+                <div>
+                    <div>
+                        <span class="text-white font-bold">toryjohnson</span>
+                        <span class="text-gray-400 ml-1 text-xs">Yesterday at 10:30PM</span>
+                    </div>
+                    <div class="-mt-0.5">
+                        <p class="text-gray-300 font-light break-words text-left">Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Facilis animi, assumenda iure cumque nesciunt totam
+                            temporibus, perferendis, quia veritatis voluptas dolore excepturi porro! Laborum iste
+                            suscipit, ad eos excepturi quidem rem officiis tempora temporibus modi asperiores recusandae
+                            incidunt aspernatur facere.</p>
+                    </div>
+                    <div class="reactions mt-2 flex space-x-2">
+                        <button class="bg-gray-800 rounded-md py-0.5 px-2">
+                            🤣
+                            <span class="text-gray-400 text-sm ml-0.5 font-medium">3</span>
+                        </button>
+                        <button class="bg-gray-800 rounded-md py-0.5 px-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px] text-gray-400" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="message px-2 py-2 my-1 flex space-x-2 hover:bg-gray-600">
+                <img src="assets/avatar.png" class="h-11 w-11 object-cover bg-no-repeat rounded-full shrink-0">
+                <div>
+                    <div>
+                        <span class="text-white font-bold">toryjohnson</span>
+                        <span class="text-gray-400 ml-1 text-xs">Yesterday at 10:30PM</span>
+                    </div>
+                    <div class="-mt-0.5">
+                        <p class="text-gray-300 font-light break-words text-left ">
+                            kmamdsosadoamsdomasodmoaksdoaisjdoaijsodiasjdoa. asidnaiosdoasda</p>
+                    </div>
+                    <div class="reactions mt-2 flex space-x-2">
+                        <button class="bg-gray-800 rounded-md py-0.5 px-2 hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px] text-gray-400" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="message px-2 py-2 my-1 flex space-x-2 hover:bg-gray-600">
+                <img src="assets/avatar.png" class="h-11 w-11 object-cover bg-no-repeat rounded-full shrink-0">
+                <div>
+                    <div>
+                        <span class="text-white font-bold">toryjohnson</span>
+                        <span class="text-gray-400 ml-1 text-xs">Yesterday at 10:30PM</span>
+                    </div>
+                    <div class="-mt-0.5">
+                        <p class="text-gray-300 font-light break-words text-left ">
+                            kmamdsosadoamsdomasodmoaksdoaisjdoaijsodiasjdoa. asidnaiosdoasda</p>
+                    </div>
+                    <div class="reactions mt-2 flex space-x-2">
+                        <button class="bg-gray-800 rounded-md py-0.5 px-2 hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px] text-gray-400" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="message px-2 py-2 my-1 flex space-x-2 hover:bg-gray-600">
+                <img src="assets/avatar.png" class="h-11 w-11 object-cover bg-no-repeat rounded-full shrink-0">
+                <div>
+                    <div>
+                        <span class="text-white font-bold">toryjohnson</span>
+                        <span class="text-gray-400 ml-1 text-xs">Yesterday at 10:30PM</span>
+                    </div>
+                    <div class="-mt-0.5">
+                        <p class="text-gray-300 font-light break-words text-left ">
+                            kmamdsosadoamsdomasodmoaksdoaisjdoaijsodiasjdoa. asidnaiosdoasda</p>
+                    </div>
+                    <div class="reactions mt-2 flex space-x-2">
+                        <button class="bg-gray-800 rounded-md py-0.5 px-2 hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px] text-gray-400" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-gray-700 shrink-0 border-t border-gray-800 h-14 py-2 px-2 flex items-center space-x-2">
+            <button class="p-2 flex items-center bg-gray-800 rounded-full hover:bg-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-200" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+            </button>
+            <button class="p-2 flex items-center bg-gray-800 rounded-full hover:bg-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-200" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+                        clip-rule="evenodd" />
+                    <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z" />
+                </svg>
+            </button>
+            <input type="text"
+                class="bg-gray-800 rounded-full p-1 w-full focus:outline-none text-white py-2 px-4 leading-tight placeholder-gray-600 focus:bg-gray-900"
+                placeholder="Message #general">
+        </footer>
+    </main>
+</body>
+
+</html>
